@@ -35,6 +35,9 @@ center {
 
 
 
+
+
+/* Эти стили переносим */
 .video-full-screen {
     background-color: rgba(0, 0, 0, 0.9);
     position: fixed;

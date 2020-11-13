@@ -16,8 +16,8 @@ var start = () => {
         video: {
             width: { ideal: 1024 },
             height: { ideal: 768 },
-            // facingMode: "user"
-            facingMode: { exact: "environment" }
+            facingMode: "user"
+            // facingMode: { exact: "environment" }
         }
     }).then(stream => {
         localStream = stream;
