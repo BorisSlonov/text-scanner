@@ -45,6 +45,7 @@ center {
     bottom: 0;
     left: 0;
     right: 0;
+    transition: all .3s;
 }
 .video-wrap {
     position: relative;
