@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <center>
+            <button onclick="start();" style="height:50px; width:200px;">Start!</button>
+            <input id="number" type="text" style="height:50px; width:200px;  font-size:20px;">
+            <input id="series" type="text" style="height:50px; width:200px;  font-size:20px;">
+        </center>
+
+        <div id="text">
+
+        </div>
+
+        <div class="video-wrap" style="visibility:hidden;">
+            <video id="video" width="100%" autoplay playsinline controls="false" muted></video>
+            <canvas id="preview"></canvas>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<!-- <canvas id="canvas" width="640" height="480">
+    <p>Ваш браузер не поддерживает рисование.</p>
+</canvas>
+
+<input id="photo" type="file" name="image" accept="image/*" capture>
+
+<script type="text/javascript" src="index.js"></script> -->
