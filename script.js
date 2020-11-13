@@ -3,7 +3,7 @@
 var canvas = document.createElement("canvas")
 var video = document.getElementById('video')
 var div = document.querySelector('#text')
-var videoWrap = document.querySelector('.video-wrap')
+var videoWrap = document.querySelector('.video-full-screen')
 var loading = false
 var snapping = false
 var localStream
@@ -16,8 +16,8 @@ var start = () => {
         video: {
             width: { ideal: 1024 },
             height: { ideal: 768 },
-            facingMode: "user"
-            // facingMode: { exact: "environment" }
+            // facingMode: "user"
+            facingMode: { exact: "environment" }
         }
     }).then(stream => {
         localStream = stream;
@@ -81,6 +81,6 @@ var snap = () => {
     }
 }
 
-setInterval(snap, 10000);
+setInterval(snap, 500000);
 
 var log = msg => div.innerHTML += "<br>" + msg;
